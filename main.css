@@ -4,4 +4,30 @@
     box-sizing: border-box;
 }
 
-/* ---------color variables----------- */
+/* ---------Start of color variables----------- */
+:root {
+    --background-blue: rgb(224,252,255);
+    --navSticky-background: rgb(250,250,250,0.98);
+    --navSticky-shadow:(#efefef)
+}
+/* ---------End of color variables----------- */
+
+/* ---------Start of Header--------- */
+
+header {
+  background-color: var(--background-blue);
+  max-width: 60%;
+}
+
+/* ------Start of Nav bar------  */
+.sticky {
+    position: fixed; 
+     top: 0%; 
+     left: 0%; 
+     width: 100%; 
+     z-index: 9999; 
+     background-color: var(--navSticky-background);
+     box-shadow: 0 2px 2px #efefef;
+}
+/* ------End of Nav bar------  */
+/* ---------End of Header--------- */
