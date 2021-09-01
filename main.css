@@ -78,42 +78,61 @@ a:hover {
 /* -----Start of text / img content ----- */
 .txt-img-box {
     display: flex;
-    background-color: red;
     justify-content: space-around;
     align-content: center;
 
 }
 .hero-text-box {
-    margin:8rem 2rem;
-    background-color: yellow;
-    height: fit-content;
+    margin:8rem 4rem;
     display: flex;
     flex-direction: column;
-    max-width: 80%;
+    max-width: 90%;
 }
 h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     font-family: var(--link-font);
     font-weight: 700;
     padding: .1rem 0rem;
     text-transform: capitalize;
     color: var(--h1);
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+}
+@keyframes moveInLeft {
+    0% {
+        opacity: 0%;
+        transform:translateX(-100px)
+    }
+    80% {
+        opacity: 50%;
+        transform:translateX(10px)
+
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: var(--link-font);
     font-weight: 500;
-    color: var(h3);
+    color: var(--h3);
     padding-bottom: .5rem;
     text-transform: capitalize;
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+    animation-delay: .1s;
 }
 h5 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: var(--link-font);
     font-weight: 500;
-    color: var(--button);
+    color: var(--h1);
     padding-bottom: 2rem;
     text-transform: capitalize;
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+    animation-delay: .2s;
 }
 
 button {
@@ -126,12 +145,25 @@ button {
     text-transform: uppercase;
     background-color: var(--button);
     border: none;
+    animation-name: moveUp;
+    animation-duration: 3s;
+}
+@keyframes moveUp {
+    0% {
+        opacity: 0%;
+        transform:translateY(-100px)
+    }
+    80% {
+        opacity: 50%;
+        transform:translateY(20px)
+    }
 }
 button:hover {
     cursor: pointer;
     background-color: var(--button-hover);
     color: var(--h1);
     transition: all 1s ease;
+    box-shadow: 1px 6px 6px  rgb(16,42,66) ;
 
 }
  .icon-row {
@@ -143,7 +175,12 @@ button:hover {
 }
 .social-icon-row {
     list-style: none;
+    animation-name: fadeIn;
+    animation-duration: 5s;
     
+    
+}
+.social-icon-row:hover {
     
 }
 
@@ -154,9 +191,18 @@ button:hover {
 } 
 #facebook #linkedin {
     color: var(--h1);
+    text-decoration: none;
 }
 .linkedin {
     display: inline-block;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 
 
@@ -166,13 +212,38 @@ button:hover {
 /* ------End of text content-------  */
 /* ------Start of hero img-------  */
 .hero-img {
-    background-color: pink;
+    background-color:var(--button);
     width:20%;
     margin-top: 5rem;
+    margin-right: 5rem;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 75%;
+    animation-name: moveInRight;
+    animation-duration: 3s;
+    
+    
 }
 .img {
+    /* clip-path: circle(50% at 50% 50%); */
+    clip-path: polygon(50% 8%, 90% 20%, 100% 60%, 75% 100%, 11% 93%, 0% 60%, 0 19%);
     width: 100%;
-    border-radius: 50%;
+    /* border-radius: 50%; */
+}
+@keyframes moveInRight {
+    0% {
+        opacity: 0%;
+        transform:translateX(100px)
+    }
+    80% {
+        opacity: 50%;
+        transform:translateX(-10px)
+
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 /* ------End of Hero img-------  */
 /* ---------End of Header--------- */
