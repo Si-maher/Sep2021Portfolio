@@ -3,27 +3,34 @@
     margin: 0;
     box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
-/* ---------Start of color variables----------- */
+/* ---------Start of color / text variables----------- */
 :root {
     --background-blue: rgb(224,252,255);
     --navSticky-background: rgb(250,250,250,0.98);
     --navSticky-shadow:(#efefef);
     --links: rgb(16,42,66);
+    --h1: rgb(16,42,66);
+    --social-media-link: rgb(16,42,66);
+    --h3: rgb(97,125,165);
     --hover: rgb(136,235,242);
-    /* -----Start of Fonts------  */
+    --button: rgb(44,174,186);
+    --button-hover: rgb(136,235,242);
+
+    
 
     --link-font: "Roboto", sans-serif;
-    /* -----End of Fonts------  */
+    
 }
-/* ---------End of color variables----------- */
+/* ---------End of color / text variables----------- */
 
 /* ---------Start of Header--------- */
 
 header {
     display: flex;
     flex-direction: column;
+    /* align-items: center ; */
   background-color: var(--background-blue);
   max-width: 1000%;
   height: 100vh;
@@ -42,8 +49,8 @@ header {
 .row {
     
     justify-content: flex-end;
-
     height: fit-content;
+    margin-top: 2rem;
 }
 .main-nav li {
     
@@ -51,6 +58,7 @@ header {
     padding: 0 3rem;
     font-size:1rem ;
     font-family: var(--link-font);
+    font-weight: 100;
     
 }
 a {
@@ -63,13 +71,108 @@ a:hover {
     border-bottom: 1px solid var(--hover);
 }
 .darkmode {
-    margin-right: 40rem;
+    margin-right: 30rem;
 }
 /* ------End of Nav bar------  */
-/* ---------End of Header--------- */
+
+/* -----Start of text / img content ----- */
+.txt-img-box {
+    display: flex;
+    background-color: red;
+    justify-content: space-around;
+    align-content: center;
+
+}
 .hero-text-box {
+    margin:8rem 2rem;
     background-color: yellow;
     height: fit-content;
     display: flex;
     flex-direction: column;
+    max-width: 80%;
 }
+h1 {
+    font-size: 4rem;
+    font-family: var(--link-font);
+    font-weight: 700;
+    padding: .1rem 0rem;
+    text-transform: capitalize;
+    color: var(--h1);
+}
+h3 {
+    font-size: 1rem;
+    font-family: var(--link-font);
+    font-weight: 500;
+    color: var(h3);
+    padding-bottom: .5rem;
+    text-transform: capitalize;
+}
+h5 {
+    font-size: 1rem;
+    font-family: var(--link-font);
+    font-weight: 500;
+    color: var(--button);
+    padding-bottom: 2rem;
+    text-transform: capitalize;
+}
+
+button {
+    display: inline-block;
+    margin-right: .5rem;
+    margin-bottom: 1.5rem;
+    padding:.5rem;
+    border-radius: .5rem;
+    color: var(--hover);
+    text-transform: uppercase;
+    background-color: var(--button);
+    border: none;
+}
+button:hover {
+    cursor: pointer;
+    background-color: var(--button-hover);
+    color: var(--h1);
+    transition: all 1s ease;
+
+}
+ .icon-row {
+     
+  
+     font-size:2rem ;
+
+
+}
+.social-icon-row {
+    list-style: none;
+    
+    
+}
+
+ .facebook {
+  
+    display: inline-block;
+    margin-right: 1rem;
+} 
+#facebook #linkedin {
+    color: var(--h1);
+}
+.linkedin {
+    display: inline-block;
+}
+
+
+/* i {
+    margin-bottom: 1rem;
+} */
+/* ------End of text content-------  */
+/* ------Start of hero img-------  */
+.hero-img {
+    background-color: pink;
+    width:20%;
+    margin-top: 5rem;
+}
+.img {
+    width: 100%;
+    border-radius: 50%;
+}
+/* ------End of Hero img-------  */
+/* ---------End of Header--------- */
