@@ -8,6 +8,7 @@
 /* ---------Start of color / text variables----------- */
 :root {
     --background-blue: rgb(224,252,255);
+    --background-grey: rgb(241,245,248);
     --navSticky-background: rgb(250,250,250,0.98);
     --navSticky-shadow:(#efefef);
     --links: rgb(16,42,66);
@@ -17,6 +18,7 @@
     --hover: rgb(136,235,242);
     --button: rgb(44,174,186);
     --button-hover: rgb(136,235,242);
+    
 
     
 
@@ -30,10 +32,11 @@
 header {
     display: flex;
     flex-direction: column;
-    /* align-items: center ; */
+    /* flex-wrap: wrap; */
   background-color: var(--background-blue);
   max-width: 1000%;
   height: 100vh;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
 /* ------Start of Nav bar------  */
@@ -98,7 +101,7 @@ h1 {
     animation-name: moveInLeft;
     animation-duration: 3s;
 }
-@keyframes moveInLeft {
+/* @keyframes moveInLeft {
     0% {
         opacity: 0%;
         transform:translateX(-100px)
@@ -111,7 +114,7 @@ h1 {
     100% {
         opacity: 100%;
     }
-}
+} */
 h3 {
     font-size: 1.5rem;
     font-family: var(--link-font);
@@ -148,7 +151,7 @@ button {
     animation-name: moveUp;
     animation-duration: 3s;
 }
-@keyframes moveUp {
+/* @keyframes moveUp {
     0% {
         opacity: 0%;
         transform:translateY(-100px)
@@ -157,7 +160,7 @@ button {
         opacity: 50%;
         transform:translateY(20px)
     }
-}
+} */
 button:hover {
     cursor: pointer;
     background-color: var(--button-hover);
@@ -175,14 +178,15 @@ button:hover {
 }
 .social-icon-row {
     list-style: none;
-    animation-name: fadeIn;
-    animation-duration: 5s;
+    animation-name: moveUp;
+    animation-delay: .1s;
+    animation-duration: 3s;
     
     
 }
-.social-icon-row:hover {
+/* .social-icon-row:hover {
     
-}
+} */
 
  .facebook {
   
@@ -196,14 +200,14 @@ button:hover {
 .linkedin {
     display: inline-block;
 }
-@keyframes fadeIn {
+/* @keyframes fadeIn {
     0% {
         opacity: 0%;
     }
     100% {
         opacity: 100%;
     }
-}
+} */
 
 
 /* i {
@@ -231,7 +235,7 @@ button:hover {
     width: 100%;
     /* border-radius: 50%; */
 }
-@keyframes moveInRight {
+/* @keyframes moveInRight {
     0% {
         opacity: 0%;
         transform:translateX(100px)
@@ -244,6 +248,12 @@ button:hover {
     100% {
         opacity: 100%;
     }
-}
+} */
 /* ------End of Hero img-------  */
 /* ---------End of Header--------- */
+
+/* --------Start of About me section ------- */
+.about-me {
+    background-color: var(--background-grey);
+}
+/* --------End of About me section ------- */
