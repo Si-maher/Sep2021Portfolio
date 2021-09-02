@@ -9,10 +9,12 @@
 :root {
     --background-blue: rgb(224,252,255);
     --background-grey: rgb(241,245,248);
+    --background-white:rgb(255,255,255);
     --navSticky-background: rgb(250,250,250,0.98);
     --navSticky-shadow:(#efefef);
     --links: rgb(16,42,66);
     --h1: rgb(16,42,66);
+    --h2: rgb(16,42,66);
     --social-media-link: rgb(16,42,66);
     --h3: rgb(97,125,165);
     --hover: rgb(136,235,242);
@@ -34,7 +36,7 @@ header {
     flex-direction: column;
     /* flex-wrap: wrap; */
   background-color: var(--background-blue);
-  max-width: 1000%;
+  max-width: 100%;
   height: 100vh;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
@@ -253,7 +255,80 @@ button:hover {
 /* ---------End of Header--------- */
 
 /* --------Start of About me section ------- */
-.about-me {
+.about-me-section {
+    margin-top: 2rem;
     background-color: var(--background-grey);
+    height: 100vh;
+    
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%)
 }
+ h2 {
+     text-align: center;
+     color:var(--h2);
+     text-transform: capitalize;
+     font-family: var(--link-font);
+     font-size: 2rem;
+     padding: 3rem;
+    
+    }   
+    .about-me-container {
+        display: flex;
+        justify-content:space-around;
+        /* flex-wrap: wrap; */
+    }
+    .about-me-text {
+        background-color: var(--background-white);
+        max-width: 40%;
+        padding: 1rem;
+        margin-top: 3rem;
+        border-radius: 20px;
+        
+    }
+    .about-me-paragraph {
+        line-height: 1.3rem;
+        font-family: var(--link-font);
+        margin-bottom: .4rem;
+    }
+    .about-me-imgs {
+    position: relative;
+    margin-top: 3rem;
+    
+    
+}
+.photo {
+    position: absolute;
+    width: 11rem;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0, 0.4);
+    border-radius: 20px;
+    z-index: 10;
+    transition: all.5s ease-in-out;
+}
+.photo:hover {
+    transform: scale(1.15);
+    box-shadow: 0 3.5rem 4rem rgba(0, 0, 0, 0.6);
+    z-index: 20;
+    
+}
+.img-1 {
+    left: -13rem;
+    top: rem;
+    background-image: url(./imgs/Hero-img.jpg);
+}
+.img-2 {
+    
+    background-image: url(./imgs/Hero-img.jpg);
+    right: -5rem;
+    top: 2rem;
+}
+.img-3 {
+    background-image: url(./imgs/Hero-img.jpg);
+    right: 20%;
+    top: 5rem;
+}
+
 /* --------End of About me section ------- */
+
+/* -------Start of Tech stack ------------- */
+
+
+/* -------End of Tech stack ------------- */
