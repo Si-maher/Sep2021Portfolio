@@ -10,16 +10,15 @@
 </head>
 <body>
    <!-------------Start of header section------------->
-   <header>
+   <header class="header">
        <!---Start of Nav section--->
        <div class="row">
-       <nav class="sticky">
-               <ul class="main-nav">
-                   <li class="darkmode"> <a href="#">Dark Mode</a></li>
-                   <li> <a href="#">Home</a></li>
-                   <li> <a href="#">About</a></li>
-                   <li> <a href="#">Projects</a></li>
-                   <li> <a href="#">Contact</a></li>
+       <nav class="sticky-nav">
+               <ul class="main-nav ">
+                   <li> <a class="nav-links" href="#">Home</a></li>
+                   <li> <a class="nav-links"href="#about">About</a></li>
+                   <li> <a class="nav-links"href="#projects">Projects</a></li>
+                   <li> <a class="nav-links"href="#contact">Contact</a></li>
                 </ul>
             </nav>
             </div>
@@ -29,11 +28,12 @@
         <div class="txt-img-box">
 
             <div class="hero-text-box">
+                <hr class="name-top-border">
                 <h1>hi, i'm Simon</h1>
                 <h3>junior web developer available for immediate hire</h3>
-                <h5>office / relocate / remote </h5>
+                <h5>office / remote / relocate </h5>
                 <div class="button"> 
-                    <a href=""> 
+                    <a href="#contact"> 
 
                         <button class="btn btn-full">contact me</button>
                     </a>
@@ -49,10 +49,13 @@
                 <div class="icon-row">
                     <ul class=" social-icon-row">
                         <div class="facebook">
-                            <li> <a href="#"> <i id="facebook-icon"  class="fab fa-facebook-square"></i></a></li>
+                            <li> <a id="facebook-icon" href="https://www.facebook.com/simon.j.maher" target="blank"> <i  class="fab fa-facebook-square"></i></a></li>
                         </div>
                         <div class="linkedin">
-                            <li> <a href=""> <i id="linkedin-icon" class="fab fa-linkedin"></i></a></li>
+                            <li> <a id="linkedin-icon"  href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="blank"> <i class="fab fa-linkedin"></i></a></li>
+                        </div>
+                        <div class="linkedin">
+                            <li> <a id="github-icon"  href="https://github.com/Si-maher" target="blank"> <i class="fab fa-github-square"></i></a></li>
                         </div>
                     </ul>
                 </div>
@@ -62,7 +65,7 @@
                 
             </div>
             <div class="hero-img">
-                <img class="img" src="imgs/Hero-img.jpg" alt="Profile image of myself" height="350px" width="200px">
+                <img class="img" src="imgs/Hero-img-3.jpg" alt="Profile image of myself" height="350px" width="200px">
             </div>
             <!--End of Hero img -->
         </div>
@@ -70,23 +73,25 @@
    <!-------------End of header section------------->
 
    <!--------------Start of About me section--------->
-   <section class="about-me-section">
+   <section id="about" class="about-me-section">
        <h2>about me</h2>
+       <hr class="about-me-underline">
 <div class="about-me-container">
 
     <div class="about-me-text">
+        <hr class="about-me-hr">
         <p class="about-me-paragraph">
 
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem officiis cumque eos, corporis repudiandae eligendi autem repellat maiores eveniet odio adipisci placeat a assumenda in id delectus ullam repellendus accusantium! <br>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem officiis cumque eos, corporis repudiandae eligendi autem repellat maiores eveniet odio adipisci placeat a assumenda in id delectus ullam repellendus accusantium! <br>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem officiis cumque eos, 
         </p>
-        <a href=""> <button>more</button></a>
+        <a href="./aboutMe.html" target="blank"> <button class="btn">more</button></a>
         </div>
     <div class="about-me-imgs">
-        <img class="photo img-1" src="imgs/Hero-img2.jpg" alt="" height="" width="">
-        <img class="photo img-2"src="imgs/Hero-img2.jpg" alt="" height="" width="">
-        <img class="photo img-3"src="imgs/Hero-img2.jpg" alt="" height="" width="">
+        <img class="photo img-1" src="imgs/Hero-img-3.jpg" alt="" height="" width="">
+        <img class="photo img-3"src="imgs/About-me-1.jpg" alt="" height="" width="">
+        <img class="photo img-2"src="imgs/About-me-2.jpg" alt="" height="" width="">
         
         
     </div>
@@ -95,8 +100,9 @@
    </section>
    <!--------------End of About me section--------->
    <!-------------Start of Tech Stack-------------->
-   <section class="tech-stack">
+   <section id="tech-stach" class="tech-stack">
        <h2>tech stack</h2>
+       <hr class="about-me-underline">
 <div class="tech-stack-container">
     <div class="friendly-with">
         
@@ -107,16 +113,16 @@
         <span class="span-tech">javascript</span>
         <span class="span-tech">react</span>
         <span class="span-tech">redux</span> 
-        <span class="span-tech">redux</span>
-        <span class="span-tech">redux</span>
+        <span class="span-tech">Mocha</span>
+        <span class="span-tech">Jest</span>
     </div>
     <div class="geting-to-know">
-        <h3 class="span-title">having a coffee and getting to know</h3>
-        <span class="span-tech">html</span>
-        <span class="span-tech">css</span>
-        <span class="span-tech">javascript</span>
-        <span class="span-tech">react</span>
-        <span class="span-tech">redux</span>
+        <h3 class="span-title">having a coffee, exploring and getting to know</h3>
+        <span class="span-tech">Gatsby</span>
+        <span class="span-tech">TypeScript</span>
+        <span class="span-tech">Next.js</span>
+        <span class="span-tech">Linear Data Structures</span>
+        <span class="span-tech">Vue</span>
     </div>
 </div>
    </section>
@@ -124,8 +130,9 @@
 
    <!--------------Start of Project section------->
 
-   <section class="project-section">
+   <section id="projects" class="project-section">
        <h2>recent projects</h2>
+       <hr class="about-me-underline">
        <div class="project-container">
            <div class="project-card">
                
@@ -139,7 +146,7 @@ this is a short paragragh which describes the app and what tech stack is used
                                   <i class="fab fa-github-square"></i>
                                </a>
                                <a href="">
-                                   <button class="view-here-button">view here</button>
+                                   <button class="view-here-btn">view here</button>
                                 </a>
                             </div>
                         </div>
@@ -155,7 +162,7 @@ this is a short paragragh which describes the app and what tech stack is used
                                   <i class="fab fa-github-square"></i>
                                </a>
                                <a href="">
-                                   <button class="view-here-button">view here</button>
+                                   <button class="view-here-btn">view here</button>
                                 </a>
                             </div>
                         </div>
@@ -171,7 +178,7 @@ this is a short paragragh which describes the app and what tech stack is used
                                   <i class="fab fa-github-square"></i>
                                </a>
                                <a href="">
-                                   <button class="view-here-button">view here</button>
+                                   <button class="view-here-btn">view here</button>
                                 </a>
                             </div>
                         </div>
@@ -187,21 +194,83 @@ this is a short paragragh which describes the app and what tech stack is used
                                   <i class="fab fa-github-square"></i>
                                </a>
                                <a href="">
-                                   <button class="view-here-button">view here</button>
+                                   <button class="view-here-btn">view here</button>
                                 </a>
                             </div>
                         </div>
                     </div>
                         <div class="discover-more">
-                    <button>discover more</button>
+                            <button class="btn discover-more-btn">discover more</button>
                  </div>
         </section>
+        <!--------------End of Project section------->
+        <!-----------Start of Contact Me------------->
+        <section id="contact" class="contact-me-section">
+            <div class="contact-me-container">
+                <div class="contact-info">
+                    <div>
+                        <h2 class="contact-me">contact me</h2>
+                        <ul class="info">
+                            <li>
+                                <span>
+                                    <i id="icon-europe" class="fas fa-globe-europe"></i>
+                                </span>
+                                <span>hiekkaharju, <br>
+                                vantaa 01350, <br>
+                            finland</span>
+                            </li>
+                            <li>
+                                <span>
+                                    <i id="icon-email" class="fas fa-envelope-open-text"></i>
+                                </span>
+                                <span>simonmaher8307@gmail.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                        <ul class="social-media-icons">
+                            <li> <a href="https://www.facebook.com/settings?tab=account&section=username" target="blank"> <i id="contact-facebook-icon"  class="fab fa-facebook-square"></i></a></li>
+                            <li> <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="blank"> <i id="contact-linkedin-icon" class="fab fa-linkedin" ></i></a></li>
+                            <li> <a id="github-icon"  href="https://github.com/Si-maher" target="blank"> <i id="contact-github-icon" class="fab fa-github-square"></i></a></li>
+                        </ul>
+                </div>
+                <div class="contact-form">
+                    <h2>send message</h2>
+                    <div class="form-box">
+                        <div class="inputBox w50">
+                            <input type="text" name="" id="" required>
+                            <span>first name</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="text" name="" id="" required>
+                            <span>last name</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="text" name="" id="" required>
+                            <span>email address</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="text" name="" id="" required>
+                            <span>contact number</span>
+                        </div>
+                        <div class="inputBox w100">
+                            <textarea name="" required></textarea>
+                            <span>your message</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <button class="btn" type="submit">send</button>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-----------End of Contact Me------------->
 
           
 
          
                     
-   <!--------------End of Project section------->
 <script src="index.js"></script>
 </body>
 </html>
