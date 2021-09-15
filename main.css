@@ -6,6 +6,7 @@
 }
 html {
     scroll-behavior: smooth;
+    padding: 20px;
 }
 /* ---------Start of color / text variables----------- */
 :root {
@@ -58,8 +59,9 @@ padding-top: 2rem;
     animation-name: moveInRight;
     /* margin-top: 2rem !important; */
     animation-duration: 3s;
+    /* background-color: red */
 }
-.main-nav li {
+.main-nav li  {
     display: inline-block;
     padding: 0 2rem;
     font-family: var(--link-font);
@@ -73,6 +75,45 @@ padding-top: 2rem;
     color: var(--hover);
     border-bottom: 1px solid var(--hover);
 }
+.hamburger {
+    display: none;
+}
+@media only screen and (max-width:1000px) {
+    .hamburger {
+        display: block;
+        border: none;
+        background-color: transparent;
+        color: black;
+        font-size: 10px;
+        margin: px;
+        align-self: flex-start;
+
+        
+    }
+    ul  {
+        display: none;
+    }
+    .sticky-nav .row {
+        display: none;
+    }
+    .main-nav.show {
+    display: block;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        /* justify-content: right; */
+        /* background-color: red */
+        /* margin: auto; */
+    }
+    li {
+        display: flex;
+        font-size: 2rem;
+    }
+
+
+}
+
 /* ------End of Nav bar-----------------  */
 
 /* -----Start of text / img content ----- */
@@ -80,11 +121,17 @@ padding-top: 2rem;
     display: flex;
     justify-content: space-around;
     align-content: center;
+    background-color: pink;
+    
 }
 .hero-text-box {
     margin:8rem 4rem;
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
+    /* height: 100%; */
+    background-color: purple;
+
 }
 h1 {
     font-size: 4rem;
@@ -206,13 +253,32 @@ box-shadow: 1px 2px 6px  var(--button) ;
             opacity: 100%;
         }
     } */
+    @media only screen and (max-width:1000px) {
+
+        .txt-img-box {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+    .hero-text-box {
+     margin: auto;
+    }
+.hero-img {
+    margin: auto;
+    width: 100%;
     
-   
+}
+.img {
+    height: 50vh;
+    width: 50vh;
+}
+    }
     /* ------End of text content-------  */
     /* ------Start of hero img-------  */
     .hero-img {
         background-color:var(--button);
-        width:25%;
+        width:35%;
         margin-top: 5rem;
         margin-right: 5rem;
         border-top-left-radius: 20%;
@@ -226,7 +292,7 @@ box-shadow: 1px 2px 6px  var(--button) ;
         /* clip-path: circle(50% at 50% 50%); */
         clip-path: polygon(50% 8%, 90% 20%, 100% 60%, 75% 100%, 11% 93%, 0% 60%, 0 19%);
         width: 100%;
-        /* border-radius: 50%; */
+        
         opacity: .7;
     }
 /* @keyframes moveInRight {
@@ -269,7 +335,7 @@ box-shadow: 1px 2px 6px  var(--button) ;
     .about-me-container {
         display: flex;
         justify-content:space-around;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         animation-name: moveUp;
         animation-duration: 3s;
     }
@@ -293,6 +359,7 @@ box-shadow: 1px 2px 6px  var(--button) ;
         /* font-family: var(--link-font); */
         margin-bottom: 1rem;
         margin-top: .4rem;
+        height: fit-content;
     }
     .about-me-imgs {
     position: relative;
@@ -330,7 +397,29 @@ box-shadow: 1px 2px 6px  var(--button) ;
     right: 20%;
     top: 5rem;
 }
-
+@media only screen and (max-width:1000px){
+    .about-me-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: orchid;
+        
+    }
+    .about-me-text {
+        background-color: red;
+        /* padding: auto; */
+        max-width: 100%;
+        margin: auto;
+        flex-grow:;
+        
+    }
+    .about-me-paragraph{
+        line-height: 2rem;
+        }
+        .photo {
+            display: none;
+        }
+}
 /* --------End of About me section ------- */
 
 /* -------Start of Tech stack ------------- */
@@ -368,6 +457,15 @@ border-left: 0.4rem solid var(--button);
     margin-bottom: 8rem;
     animation-name: moveUp;
     animation-duration: 3s;
+}
+@media only screen and (max-width:1000px) {
+    .span-tech {
+        font-size: .8rem;
+        margin: .5rem;
+    }
+    .friendly-with {
+        margin-bottom: 1.5rem;
+    }
 }
 /* -------End of Tech stack ------------- */
 
@@ -450,6 +548,15 @@ box-shadow: 1px 2px 6px  var(--button) ;
 }
 .discover-more-btn {
     margin:5rem;
+}
+@media only screen and (max-width:1000px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .project-card {
+        margin-bottom: 1rem;
+    }
 }
 /* ---------End of Project section---------  */
 

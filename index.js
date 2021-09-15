@@ -1,3 +1,21 @@
+const hamburgerButton = document.querySelector('.hamburger')
+const navList = document.querySelector('.main-nav')
+
+function toggleButton() {
+    navList.classList.toggle('show')
+}
+hamburgerButton.addEventListener('click', toggleButton)
+
+
+
+
+
+
+
+
+
+
+
 const stickyHeader = document.querySelector('.header')
 
 const obs = new IntersectionObserver(
