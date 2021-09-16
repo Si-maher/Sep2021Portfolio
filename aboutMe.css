@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.timeline {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 700px;
+    position: relative;
+}
+.timeline-content-title {
+    font-weight: normal;
+    font-size: 55px;
+    margin: -10px 0 0 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+}
+.timeline-content-desc {
+    margin: 0;
+    font-size: 15px;
+    box-sizing: border-box;
+    color: rgba(255,255,255, .7);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    line-height: 25px;
+}
+.timeline:before {
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    margin-left: -1px;
+    content: '';
+    background:rgba(255,255,255, .7) ;
+}
