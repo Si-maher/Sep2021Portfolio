@@ -8,7 +8,6 @@ html {
     scroll-behavior: smooth;
     padding: 20px;
 }
-/* ---------Start of color / text variables----------- */
 :root {
     --background-blue: rgb(224,252,255);
     --background-grey: rgb(241,245,248);
@@ -27,16 +26,13 @@ html {
     --tech-stack: rgb(218,226,236);
     --link-font: "Roboto", sans-serif;
 }
-/* ---------End of color / text variables----------- */
 /* ---------Start of Header--------- */
 header {
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
   background-color: var(--background-blue);
   max-width: 100%;
   height: 100vh;
-  /* clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); */
 padding-top: 2rem;
 }
 /* ------Start of Nav bar------  */
@@ -487,7 +483,7 @@ border-left: 0.4rem solid var(--button);
      box-shadow: 1px 1px 10px var(--h1) ;
      width: 240px;
      height: fit-content;
-     padding: 1.5rem;
+     padding: 1rem;
      opacity: 0.8;
      transition: transform 0.5s, opacity 0.5s;
      

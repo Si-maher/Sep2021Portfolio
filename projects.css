@@ -3,14 +3,43 @@
     padding: 0;
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+html {
+    scroll-behavior: smooth;
+    padding: 20px;
+}
+:root {
+    --background-blue: rgb(224,252,255);
+    --background-grey: rgb(241,245,248);
+    --background-white:rgb(255,255,255);
+    --navSticky-background: rgb(250,250,250,0.98);
+    --navSticky-shadow:(#efefef);
+    --box-shadow:rgb(179, 157, 157);
+    --footer: rgb(5, 18, 31);
+    --links: rgb(16,42,66);
+    --h1: rgb(16,42,66);
+    --contactForm-background: rgb(16,42,66);
+    --h2: rgb(16,42,66);
+    --social-media-link: rgb(16,42,66);
+    --h3: rgb(97,125,165);
+    --hover: rgb(136,235,242);
+    --button: rgb(44,174,186);
+    --button-hover: rgb(136,235,242);
+    --tech-stack: rgb(218,226,236);
+    --link-font: "Roboto", sans-serif;
+    --fontSize-h1: clamp(3.5rem, 16vw + 1rem, 16rem);
+    --fontSize-h2: clamp(2rem, 4vw + 1rem, 4rem);
+    --fontSize-h3: clamp(2rem, 1vw + 1rem, 4rem);
+}
+header {
+    height: 100vh;
+}
 nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     min-height: 8vh;
-    background-color: cadetblue;
-
-
+    /* background-color: cadetblue; */
 }
 .nav-links {
     display: flex;
@@ -19,15 +48,35 @@ nav {
     list-style: none;
 }
 .nav-links a {
-    font-size:1.5rem;
+    font-size:1rem;
     text-decoration: none;
+    color: var(--links);
+    text-transform: capitalize;
 
+}
+.nav-links a:hover {
+    transition: all 1s ease;
+    color: var(--hover);
+    border-bottom: 1px solid var(--hover);
 }
 .hamburger-menu {
     padding: 1rem;
     display: none;
+    cursor: pointer;
 }
-@media screen and (max-width:768px){
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226,226,226);
+    margin: 5px;
+    transition:all .3s ease-in;
+}
+@media only screen and (max-width:768px){
+    body {
+        overflow-x: hidden;
+        height: fit-content;
+    }
+  
     .nav-links {
         position: absolute;
         right: 0;
@@ -37,5 +86,253 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .hamburger-menu {
+        display: block;
     }
 }
+    .nav-active {
+        transform: translateX(0%);
+    }
+    @keyframes navLinkFade {
+        from {
+opacity: 0%;
+transform: translateX(50px);
+}
+to {
+    opacity: 1;
+    transform: translateX(0px);
+
+        }
+    }
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+.hero-title {
+    margin-top: 4rem;
+}
+.title-top-border {
+    background-color:var(--button);
+    height: .2rem;
+    border: none;
+    margin-right:70rem;
+    margin-left: 1rem;
+
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+}
+h1.projects-header {
+    font-size: var(--fontSize-h1);
+    font-family: var(--link-font);
+    text-transform: capitalize;
+    color: var(--h1);
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+    font-weight: 100;
+    margin-top: 1vh;
+}
+/* Choose option section */
+section {
+    display: flex;
+    height: fit-content;
+    
+}
+section.project-options {
+    flex-direction: column;
+    align-items:center;
+    background-color: var(--h1);
+    height: 70vh;
+    
+}
+.option-top-border {
+margin-top: 3rem;
+margin-right: 35rem;
+margin-left: 2rem;
+height: .2rem;
+background-color: var(--button);
+border: none;
+}
+h2.options-title {
+    margin: 2rem;
+    color: var(--background-white);
+    font-size: var(--fontSize-h2);
+    font-weight: 300;
+    font-family: var(--link-font);
+    text-transform: capitalize;
+}
+.btn {
+    display: inline-block;
+    margin-right: .5rem;
+    margin-bottom: 1.5rem;
+    padding:.4rem;
+    border-radius: .2rem;
+    color: var(--hover);
+    text-transform: uppercase;
+    background-color: var(--button);
+    border: none;
+    animation-name: moveUp;
+    animation-duration: 3s;
+}
+.btn:hover {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: var(--button-hover);
+    color: var(--h1);
+    transition: all 1s ease;
+    box-shadow: 1px 2px 6px  var(--button) ;
+    }
+    /* project section  */
+    section.css-projects, .javascript-projects, .react-projects {
+        background-color: var(--background-blue);
+        display: flex;
+        flex-direction: column;
+        height:100vh;
+    }
+    .javascript-projects {
+        background-color: var(--background-white) ;
+    }
+    .react-projects {
+        background-color:var(--background-blue) ;
+    }
+    h3.tech-project {
+        margin-top: 2rem;
+        text-align: center;
+        padding: 1rem;
+        font-size: var(--fontSize-h3);
+        font-family: var(--link-font);
+        text-transform: uppercase;
+    }
+    .project-container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5rem;
+        animation-name: moveInLeft;
+        justify-content:space-around;
+        animation-duration: 3s;
+    }
+    .project-card {
+         background-color: var(--background-white);
+        border-radius: 5px;
+         box-shadow: 1px 1px 20px var(--box-shadow);
+         width: 240px;
+         height: fit-content;
+         padding: 1rem;
+         opacity: 0.8;
+         transition: transform 0.5s, opacity 0.5s;
+         
+        }
+        .project-image  {
+            
+            width: 200px;
+            border-radius: 125px;
+            height: 200px;
+            background-color: var(--button);
+          
+        }
+        .about-project-para {
+            color: var(--h1);
+            font-family: var(--link-font);
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+        .project-card-hr {
+            margin: 1rem 4rem;
+            height: .1rem;
+            background-color: var(--h1);
+            border: none;
+        }
+        .project-card:hover {
+            opacity: 1;
+            transform: scale(1.01);
+            cursor: pointer;
+            
+        }
+        .project-links {
+            display: flex;
+            justify-content: center;
+        }
+        .fa-github-square {
+            font-size: 1.4rem;
+            color: var(--h1);
+            margin: 0 .5rem;
+        }
+        .view-here-btn {
+            background-color: var(--button);
+            border: none;
+            border-radius: .2rem;
+            padding: .2rem;
+            text-transform: uppercase;
+            font-size: .7rem;
+        }
+            .view-here-btn:hover {
+        cursor: pointer;
+        text-decoration: none;
+        background-color: var(--button-hover);
+        color: var(--h1);
+        transition: all 1s ease;
+        box-shadow: 1px 2px 6px  var(--button) ;
+            }
+            @media only screen and (max-width:768px) {
+                .project-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    height: 100vh;
+                }
+                .project-card {
+                    margin-bottom: 1rem;
+                }
+            }
+            /* footer section  */
+            footer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: var(--footer);
+            }
+            .footer-icons {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+                width: 15%;
+                margin: 2rem 0 1rem 0;
+
+            }
+            #footer-icon {
+                color: white;
+                font-size: 1.5rem;
+            }
+            .footer-hr {
+                height: .1rem;
+                width: 4%;
+                margin-right: 1rem;
+                margin-bottom: 1rem;
+                border: none;
+                background-color: var(--button);
+            }
+            .footer-txt {
+                color: white;
+                text-align: center;
+                margin-bottom: 2rem;
+                letter-spacing: .1rem;
+            }
+            .span-name {
+                color: var(--button);
+                text-transform: uppercase;
+            }
+            .j-s {
+                text-decoration: none;
+            }
