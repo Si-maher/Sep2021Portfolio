@@ -6,14 +6,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 html {
     scroll-behavior: smooth;
-    padding: 20px;
 }
+
 :root {
     --background-blue: rgb(224,252,255);
     --background-grey: rgb(241,245,248);
     --background-white:rgb(255,255,255);
     --navSticky-background: rgb(250,250,250,0.98);
     --navSticky-shadow:(#efefef);
+    --hamburger-line: rgb(226,226,226);
     --box-shadow:rgb(179, 157, 157);
     --footer: rgb(5, 18, 31);
     --links: rgb(16,42,66);
@@ -30,6 +31,10 @@ html {
     --fontSize-h1: clamp(3.5rem, 16vw + 1rem, 16rem);
     --fontSize-h2: clamp(2rem, 4vw + 1rem, 4rem);
     --fontSize-h3: clamp(2rem, 1vw + 1rem, 4rem);
+}
+.overflow {
+    overflow: hidden;
+    position: relative;
 }
 header {
     height: 100vh;
@@ -71,15 +76,15 @@ nav {
     margin: 5px;
     transition:all .3s ease-in;
 }
-@media only screen and (max-width:768px){
-    body {
+@media(max-width:768px){
+    html {
         overflow-x: hidden;
-        height: fit-content;
     }
+   
   
     .nav-links {
         position: absolute;
-        right: 0;
+        right: 0rem;
         height: 92vh;
         top: 8vh;
         background-color: cadetblue;
@@ -89,6 +94,7 @@ nav {
         width: 50%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        overflow-x: hidden;
         
     }
     .nav-links li {
@@ -104,7 +110,7 @@ nav {
     @keyframes navLinkFade {
         from {
 opacity: 0%;
-transform: translateX(50px);
+transform: translateX(80px);
 }
 to {
     opacity: 1;
@@ -135,7 +141,7 @@ to {
     animation-name: moveInLeft;
     animation-duration: 3s;
 }
-h1.projects-header {
+.projects-header, h1 {
     font-size: var(--fontSize-h1);
     font-family: var(--link-font);
     text-transform: capitalize;
@@ -144,16 +150,33 @@ h1.projects-header {
     animation-duration: 3s;
     font-weight: 100;
     margin-top: 1vh;
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+}
+@keyframes moveInLeft {
+    0% {
+        opacity: 0%;
+        transform:translateX(-100px)
+    }
+    80% {
+        opacity: 50%;
+        transform:translateX(10px)
+
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 /* Choose option section */
 section {
     display: flex;
-    height: fit-content;
+    /* height: fit-content; */
     
 }
 section.project-options {
     flex-direction: column;
     align-items:center;
+    justify-content: center;
     background-color: var(--h1);
     height: 70vh;
     
@@ -200,7 +223,8 @@ h2.options-title {
         background-color: var(--background-blue);
         display: flex;
         flex-direction: column;
-        height:100vh;
+        /* height:100vh; */
+        padding-bottom: 3rem;
     }
     .javascript-projects {
         background-color: var(--background-white) ;
@@ -218,27 +242,32 @@ h2.options-title {
     }
     .project-container {
         display: flex;
-        flex-direction: row;
         margin-top: 5rem;
         animation-name: moveInLeft;
         justify-content:space-around;
         animation-duration: 3s;
     }
     .project-card {
-         background-color: var(--background-white);
+        background-color: var(--background-white);
         border-radius: 5px;
-         box-shadow: 1px 1px 20px var(--box-shadow);
-         width: 240px;
-         height: fit-content;
-         padding: 1rem;
-         opacity: 0.8;
+         box-shadow: 1px 1px 10px var(--background-grey) ;
+         width: 16rem;
          transition: transform 0.5s, opacity 0.5s;
+         overflow: hidden;
+         /* background-color: var(--background-white);
+        border-radius: 5px;
+        /* width: 240px;
+        height: fit-content;
+        padding: 1rem;
+        opacity: 0.8;
+        transition: transform 0.5s, opacity 0.5s;
+        overflow: hidden; */ 
+        box-shadow: 1px 1px 20px var(--box-shadow);
          
         }
         .project-image  {
             
-            width: 200px;
-            border-radius: 125px;
+            width: 100%;
             height: 200px;
             background-color: var(--button);
           
@@ -248,6 +277,7 @@ h2.options-title {
             font-family: var(--link-font);
             font-size: 1rem;
             margin-top: 1rem;
+            padding: 1rem;
         }
         .project-card-hr {
             margin: 1rem 4rem;
@@ -290,7 +320,7 @@ h2.options-title {
                 .project-container {
                     display: flex;
                     flex-wrap: wrap;
-                    height: 100vh;
+                    /* height: 100vh; */
                 }
                 .project-card {
                     margin-bottom: 1rem;

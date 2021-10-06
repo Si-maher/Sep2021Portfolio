@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="queries.css">
     <script src="https://kit.fontawesome.com/1cea079a31.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
 </head>
@@ -12,8 +13,7 @@
    <!-------------Start of header section------------->
    <header class="header">
        <!---Start of Nav section--->
-       <div class="row">
-       <nav class="sticky-nav">
+       <nav class=" row sticky-nav">
                <ul class="main-nav ">
                    <li> <a class="nav-links" href="#">Home</a></li>
                    <li> <a class="nav-links"href="#about">About</a></li>
@@ -24,7 +24,6 @@
                     <li class="fas fa-bars"></li>
                 </button>
             </nav>
-            </div>
         <!---End of Nav section--->
 
         <!----Start of Heading, text, img---->
@@ -40,9 +39,9 @@
 
                         <button class="btn btn-full">contact me</button>
                     </a>
-                    <a href=""> 
+                    <a href="#"> 
+                        <button class="btn">download cv</button>
 
-                        <button class="btn btn-ghost">download cv</button>
                     </a>
                 </div>
                 
@@ -51,25 +50,21 @@
                 <!---Start of Social media icons-->
                 <div class="icon-row">
                     <ul class=" social-icon-row">
-                        <div class="facebook">
-                            <li> <a id="facebook-icon" href="https://www.facebook.com/simon.j.maher" target="blank"> <i  class="fab fa-facebook-square"></i></a></li>
+                      
+                        <div class="linkedin">
+                            <li> <a id="linkedin-icon"  href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="blank"> <i class="fab fa-linkedin hero-icons"></i></a></li>
                         </div>
                         <div class="linkedin">
-                            <li> <a id="linkedin-icon"  href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="blank"> <i class="fab fa-linkedin"></i></a></li>
-                        </div>
-                        <div class="linkedin">
-                            <li> <a id="github-icon"  href="https://github.com/Si-maher" target="blank"> <i class="fab fa-github-square"></i></a></li>
+                            <li> <a id="github-icon"  href="https://github.com/Si-maher" target="blank"> <i class="fab fa-github-square hero-icons"></i></a></li>
                         </div>
                     </ul>
                 </div>
+            </div>
                 <!---End of Social media icons-->
-                
                 <!--Start of Hero img -->
-                
-            </div>
-            <div class="hero-img">
-                <img class="img" src="imgs/Hero-img-4.jpg" alt="Profile image of myself">
-            </div>
+                <div class="hero-img-box">
+                    <img class="hero-img" src="/imgs/Hero-img-4.jpg" alt="">
+               </div>
             <!--End of Hero img -->
         </div>
              </header>
@@ -83,22 +78,34 @@
 
     <div class="about-me-text">
         <hr class="about-me-hr">
+        <i class="fas fa-file-code about-me-icon"></i> <br>
+        <h3 class="about-me-heading">web development</h3>
         <p class="about-me-paragraph">
-
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem officiis cumque eos, corporis repudiandae eligendi autem repellat maiores eveniet odio adipisci placeat a assumenda in id delectus ullam repellendus accusantium! <br>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem officiis cumque eos, corporis repudiandae eligendi autem repellat maiores eveniet odio adipisci placeat a assumenda in id delectus ullam repellendus accusantium! <br>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem officiis cumque eos, 
-        </p>
-        <a href="./aboutMe.html" target="blank"> <button class="btn">more</button></a>
+          A junior Front-end web developer using modern technologies to create inspiring websites and enhance user experience and accessibility. Motivated to learn leading industry frameworks to enhance my knowledge to become a more valuable employee.
+           </p>
         </div>
-    <div class="about-me-imgs">
-        <img class="photo img-1" src="imgs/Hero-img-3.jpg" alt="" height="" width="">
-        <img class="photo img-3"src="imgs/About-me-1.jpg" alt="" height="" width="">
-        <img class="photo img-2"src="imgs/About-me-2.jpg" alt="" height="" width="">
-        
-        
+    <div class="about-me-text">
+        <hr class="about-me-hr">
+        <i class="fas fa-laptop-code about-me-icon"></i> <br>
+        <h3 class="about-me-heading">education</h3>
+        <p class="about-me-paragraph">
+          Codecademy's Front-end engineer career path taught me to create modern and responsive design that adapts seamlessly to all screen sizes. A coding bootcamp in Helsinki introduced me to the world of Web Development. 
+           </p>
+        </div>
+    <div class="about-me-text">
+        <hr class="about-me-hr">
+        <i class="far fa-id-card about-me-icon"></i> <br>
+        <h3 class="about-me-heading">employment</h3>
+        <p class="about-me-paragraph">
+           17 years experience in team member / leadership roles, working with tight deadlines where good team skills /communications were vital. Liaising with clients on a regular basis to achieve their work objectives and requests.
+           </p>
+        </div>
     </div>
-</div>
+    <div class="btn-more">
+
+        <a href="./aboutMe.html" target="blank"> <button class="btn">more</button></a>
+    </div>
+    
 
    </section>
    <!--------------End of About me section--------->
@@ -109,23 +116,28 @@
 <div class="tech-stack-container">
     <div class="friendly-with">
         
-            <h3 class="span-title">friendly with</h3>
+            <h4 class="span-title">I have been using and learning</h4>
+<div class="span-tech-block">
 
-        <span class="span-tech">html</span>
-        <span class="span-tech">css</span>
-        <span class="span-tech">javascript</span>
-        <span class="span-tech">react</span>
-        <span class="span-tech">redux</span> 
-        <span class="span-tech">Mocha</span>
-        <span class="span-tech">Jest</span>
+    <span class="span-tech">html</span>
+    <span class="span-tech">css</span>
+    <span class="span-tech">javascript</span>
+    <span class="span-tech">react</span>
+    <span class="span-tech">redux</span> 
+    <span class="span-tech">Mocha</span>
+    <span class="span-tech">Jest</span>
+</div>
     </div>
-    <div class="geting-to-know">
-        <h3 class="span-title">having a coffee, exploring and getting to know</h3>
-        <span class="span-tech">Gatsby</span>
-        <span class="span-tech">TypeScript</span>
-        <span class="span-tech">Next.js</span>
-        <span class="span-tech">Linear Data Structures</span>
-        <span class="span-tech">Vue</span>
+    <div class="getting-to-know">
+        <h4 class="span-title">Having a coffee, exploring and getting to know</h4>
+        <div class="span-tech-block">
+
+            <span class="span-tech">Gatsby</span>
+            <span class="span-tech">TypeScript</span>
+            <span class="span-tech">Next.js</span>
+            <span class="span-tech">Linear Data Structures</span>
+            <span class="span-tech">Vue</span>
+        </div>
     </div>
 </div>
    </section>
@@ -143,7 +155,7 @@
                        <p class="about-project-para">
 this is a short paragragh which describes the app and what tech stack is used
                        </p>
-                       <hr class="project-card-hr"/>
+
                        <div class="project-links">
                               <a href=""> 
                                   <i class="fab fa-github-square"></i>
@@ -159,7 +171,7 @@ this is a short paragragh which describes the app and what tech stack is used
                        <p class="about-project-para">
 this is a short paragragh which describes the app and what tech stack is used
                        </p>
-                       <hr class="project-card-hr"/>
+                       
                        <div class="project-links">
                               <a href=""> 
                                   <i class="fab fa-github-square"></i>
@@ -175,7 +187,7 @@ this is a short paragragh which describes the app and what tech stack is used
                        <p class="about-project-para">
 this is a short paragragh which describes the app and what tech stack is used
                        </p>
-                       <hr class="project-card-hr"/>
+                       
                        <div class="project-links">
                               <a href=""> 
                                   <i class="fab fa-github-square"></i>
@@ -191,7 +203,7 @@ this is a short paragragh which describes the app and what tech stack is used
                        <p class="about-project-para">
 this is a short paragragh which describes the app and what tech stack is used
                        </p>
-                       <hr class="project-card-hr"/>
+
                        <div class="project-links">
                               <a href=""> 
                                   <i class="fab fa-github-square"></i>
@@ -215,33 +227,13 @@ this is a short paragragh which describes the app and what tech stack is used
             <div class="contact-me-container">
                 <div class="contact-info">
                     <div>
-                        <h2 class="contact-me">contact me</h2>
-                        <ul class="info">
-                            <li>
-                                <span>
-                                    <i id="icon-europe" class="fas fa-globe-europe"></i>
-                                </span>
-                                <span>hiekkaharju, <br>
-                                vantaa 01350, <br>
-                            finland</span>
-                            </li>
-                            <li>
-                                <span>
-                                    <i id="icon-email" class="fas fa-envelope-open-text"></i>
-                                </span>
-                                <span>simonmaher8307@gmail.com</span>
-                            </li>
-                        </ul>
+                     
                     </div>
-                        <ul class="social-media-icons">
-                            <li> <a href="https://www.facebook.com/settings?tab=account&section=username" target="blank"> <i id="contact-facebook-icon"  class="fab fa-facebook-square"></i></a></li>
-                            <li> <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="blank"> <i id="contact-linkedin-icon" class="fab fa-linkedin" ></i></a></li>
-                            <li> <a id="github-icon"  href="https://github.com/Si-maher" target="blank"> <i id="contact-github-icon" class="fab fa-github-square"></i></a></li>
-                        </ul>
+                   
                 </div>
                 <div class="contact-form">
-                    <h2>send message</h2>
                     <div class="form-box">
+                        <h2 class="heading-contact-me">contact me</h2>
                         <div class="inputBox w50">
                             <input type="text" name="" id="" required>
                             <span>first name</span>
@@ -252,25 +244,42 @@ this is a short paragragh which describes the app and what tech stack is used
                         </div>
                         <div class="inputBox w50">
                             <input type="text" name="" id="" required>
-                            <span>email address</span>
+                            <span>email</span>
                         </div>
                         <div class="inputBox w50">
                             <input type="text" name="" id="" required>
-                            <span>contact number</span>
+                            <span>number</span>
                         </div>
                         <div class="inputBox w100">
                             <textarea name="" required></textarea>
-                            <span>your message</span>
+                            <span>message</span>
                         </div>
-                        <div class="inputBox w50">
+                        <div class="btn-submit">
                             <button class="btn" type="submit">send</button>
                             
                         </div>
-
                     </div>
+
                 </div>
             </div>
         </section>
+        <footer>
+            <div class="footer-icons">
+              
+                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="blank""> <i id="footer-icon" class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Si-maher" target="blank"> <i id="footer-icon" class="fab fa-github-square" ></i></a>
+                <a href="#header"><i id="footer-icon" class="fas fa-arrow-up"></i></a>
+            </div>
+            <hr class="footer-hr">
+            <div class="footer-txt">
+                <p>&copy; <span class="span-name">simon maher</span> 2021
+                    <br>
+                    Vantaa, Finland
+                </p>
+             
+            </div>
+
+        </footer>
         <!-----------End of Contact Me------------->
 
           
