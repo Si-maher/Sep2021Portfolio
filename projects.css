@@ -30,7 +30,7 @@ html {
     --link-font: "Roboto", sans-serif;
     --fontSize-h1: clamp(3.5rem, 16vw + 1rem, 16rem);
     --fontSize-h2: clamp(2rem, 4vw + 1rem, 4rem);
-    --fontSize-h3: clamp(2rem, 1vw + 1rem, 4rem);
+    --fontSize-h3: clamp(4rem, 1vw + 1rem, 4rem);
 }
 .overflow {
     overflow: hidden;
@@ -53,7 +53,7 @@ nav {
     list-style: none;
 }
 .nav-links a {
-    font-size:1rem;
+    font-size:2rem;
     text-decoration: none;
     color: var(--links);
     text-transform: capitalize;
@@ -135,7 +135,7 @@ to {
     background-color:var(--button);
     height: .2rem;
     border: none;
-    margin-right:70rem;
+    margin-right:90rem;
     margin-left: 1rem;
 
     animation-name: moveInLeft;
@@ -220,7 +220,7 @@ h2.options-title {
     }
     /* project section  */
     section.css-projects, .javascript-projects, .react-projects {
-        background-color: var(--background-blue);
+        background-color: var(--background-grey);
         display: flex;
         flex-direction: column;
         /* height:100vh; */
@@ -230,7 +230,7 @@ h2.options-title {
         background-color: var(--background-white) ;
     }
     .react-projects {
-        background-color:var(--background-blue) ;
+        background-color:var(--background-grey) ;
     }
     h3.tech-project {
         margin-top: 2rem;
@@ -238,6 +238,8 @@ h2.options-title {
         padding: 1rem;
         font-size: var(--fontSize-h3);
         font-family: var(--link-font);
+        font-weight: 300;
+        letter-spacing: .5rem;
         text-transform: uppercase;
     }
     .project-container {
@@ -275,9 +277,10 @@ h2.options-title {
         .about-project-para {
             color: var(--h1);
             font-family: var(--link-font);
-            font-size: 1rem;
+            font-size: 1.2rem;
             margin-top: 1rem;
             padding: 1rem;
+            line-height: 1.3;
         }
         .project-card-hr {
             margin: 1rem 4rem;

@@ -160,3 +160,50 @@ height: 20%;
         margin-right: 2rem;
     }
 }
+/* 375px iphone x  */
+@media (max-width:24em) {
+    header {
+        /* height: 50vh; */
+    }
+    .main-nav {
+        font-size: .5rem;
+    }
+    .nav-links {
+
+        font-size: .8rem;
+    }
+
+    .hero-text-box {
+        margin:2rem 4rem;
+    }
+    .hero-title {
+        margin-top: 3rem;
+    }
+    .about-me-text {
+        width: 18rem;
+    }
+    .hero-img-box {
+        margin: auto 0;
+        padding: 0 4rem;
+    }
+    .hero-img {
+        width: 90%;
+    }
+    .title-top-border {
+        margin-right:19rem;
+    margin-left: .5rem;
+    }
+    section.project-options {
+        height: 50vh;
+    }
+    .project-card {
+        width: 18rem;
+        margin-bottom: 2rem;
+    }
+    .about-project-para {
+        text-align: center;
+    }
+    .project-links {
+        margin-bottom: 1rem;
+    }
+}
