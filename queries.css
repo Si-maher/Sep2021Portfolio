@@ -187,20 +187,27 @@ height: 20%;
     h5 {
         font-size: 1rem;
     }
+    h2 {
+        margin-top: ;
+    }
     .hero-img-box {
         margin: auto 0;
         padding: 0 .5rem;
-        background-color: red;
     }
     .hero-img {
         width: 100%;
         border-radius: 0;
+        border: none;
     }
     .hero-title {
         margin-top: 3rem;
     }
+    .about-me-container {
+        
+    }
     .about-me-text {
-        width: 18rem;
+        margin: 0 auto;
+        width: 22rem;
     }
     .title-top-border {
         margin-right:19rem;
