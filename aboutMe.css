@@ -2,6 +2,7 @@
         *{
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
         :root {
           --footer: rgb(5, 18, 31); 
@@ -13,7 +14,13 @@
         }
         html {
           scroll-behavior: smooth;
-          padding: 20px;
+          overflow-x: hidden;
+      }
+      body {
+        overflow-x: hidden;
+      }
+      header {
+        overflow-x: hidden;
       }
         nav {
           display: flex;
@@ -109,10 +116,10 @@ to {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 blockquote {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
   font-weight: lighter;
-  letter-spacing: .5rem;
+  letter-spacing: .2rem;
   margin-bottom: 2rem;
 }
 span {
@@ -245,6 +252,7 @@ span {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  overflow-x: hidden;
 }
 .timeline-container:before {
   position: absolute;
