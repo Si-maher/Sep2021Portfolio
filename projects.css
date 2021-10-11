@@ -30,7 +30,7 @@ html {
     --link-font: "Roboto", sans-serif;
     --fontSize-h1: clamp(3.5rem, 16vw + 1rem, 16rem);
     --fontSize-h2: clamp(2rem, 4vw + 1rem, 4rem);
-    --fontSize-h3: clamp(4rem, 1vw + 1rem, 4rem);
+    --fontSize-h3: clamp(3rem, 1vw + 1rem, 4rem);
 }
 .overflow {
     overflow: hidden;
@@ -239,15 +239,16 @@ h2.options-title {
         font-size: var(--fontSize-h3);
         font-family: var(--link-font);
         font-weight: 300;
-        letter-spacing: .5rem;
+        letter-spacing: .2rem;
         text-transform: uppercase;
     }
     .project-container {
         display: flex;
-        margin-top: 5rem;
+        margin-top: 3rem;
         animation-name: moveInLeft;
         justify-content:space-around;
         animation-duration: 3s;
+
     }
     .project-card {
         background-color: var(--background-white);
@@ -331,8 +332,7 @@ h2.options-title {
                 flex-direction: row;
                 width: 10%;
                 margin: 2rem 0 1rem 0;
-
-            }
+}
             #footer-icon {
                 color: white;
                 font-size: 1.5rem;
@@ -358,3 +358,9 @@ h2.options-title {
             .j-s {
                 text-decoration: none;
             }
+@media (max-width:24em) {
+    .footer-icons {
+width: 5%;
+
+}
+}

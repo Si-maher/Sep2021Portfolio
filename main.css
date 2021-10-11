@@ -317,15 +317,25 @@ margin-bottom: 1rem;
     font-family: var(--link-font);
     font-weight: 400;
 }
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: flex-start;
+}
+.list-item {
+    margin-bottom: 2rem;
+}
 .span-tech {
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin: 1rem;
     background-color: var(--tech-stack);
     padding:.5rem 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border-radius: .8rem;
     color: var(--button);
     border-left: 0.4rem solid var(--h1);
+    
 }
 .span-tech-block {
     display: flex;
@@ -414,7 +424,7 @@ box-shadow: 1px 2px 6px  var(--button) ;
     text-align: center;
 }
 .discover-more-btn {
-    margin:1rem 0 3rem 0;
+    margin:3rem 0 3rem 0;
 }
 /* ------------start of Contact Me section------  */
 .contact-me-section {
