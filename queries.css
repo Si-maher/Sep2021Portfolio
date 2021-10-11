@@ -202,16 +202,13 @@ height: 20%;
     .hero-title {
         margin-top: 3rem;
     }
-    .about-me-container {
-        
-    }
     .about-me-text {
         margin: 0 auto;
         width: 22rem;
     }
     .title-top-border {
         margin-right:19rem;
-    margin-left: .5rem;
+        margin-left: .5rem;
     }
     section.project-options {
         height: 50vh;
@@ -225,5 +222,20 @@ height: 20%;
     }
     .project-links {
         margin-bottom: 1rem;
+    }
+    .span-tech {
+        font-size: 1rem;
+    }
+    .tech-list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: center;
+    }
+    .list-item {
+        margin-bottom: 2rem;
+    }
+    .friendly-with .getting-to-know {
+        margin-bottom: 2rem;
     }
 }
