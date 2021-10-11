@@ -225,6 +225,7 @@ height: 20%;
     }
     .span-tech {
         font-size: 1rem;
+        border-radius: .2rem;
     }
     .tech-list {
         display: flex;
@@ -237,5 +238,20 @@ height: 20%;
     }
     .friendly-with .getting-to-know {
         margin-bottom: 2rem;
+    }
+    .form-btn {
+      padding: .5rem 1rem;  
+    }
+    .btn-submit {
+        margin-bottom: 0;
+    }
+    textarea {
+        min-height: .8rem;
+    }
+    .form-box {
+        margin-bottom: 15rem;
+    }
+    .contact-me-container {
+        min-height: 600px;
     }
 }
