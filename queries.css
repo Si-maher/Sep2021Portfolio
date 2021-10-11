@@ -174,20 +174,33 @@ height: 20%;
     }
 
     .hero-text-box {
-        margin:2rem 4rem;
+        margin:.5rem .5rem;
+        padding: 1rem;
+        background-color: rgba(248, 238, 238, 0.3);
+    }
+    h1   {
+        font-size: 2.8rem;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+    h5 {
+        font-size: 1rem;
+    }
+    .hero-img-box {
+        margin: auto 0;
+        padding: 0 .5rem;
+        background-color: red;
+    }
+    .hero-img {
+        width: 100%;
+        border-radius: 0;
     }
     .hero-title {
         margin-top: 3rem;
     }
     .about-me-text {
         width: 18rem;
-    }
-    .hero-img-box {
-        margin: auto 0;
-        padding: 0 4rem;
-    }
-    .hero-img {
-        width: 90%;
     }
     .title-top-border {
         margin-right:19rem;

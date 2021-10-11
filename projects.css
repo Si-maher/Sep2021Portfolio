@@ -256,24 +256,14 @@ h2.options-title {
          width: 16rem;
          transition: transform 0.5s, opacity 0.5s;
          overflow: hidden;
-         /* background-color: var(--background-white);
-        border-radius: 5px;
-        /* width: 240px;
-        height: fit-content;
-        padding: 1rem;
-        opacity: 0.8;
-        transition: transform 0.5s, opacity 0.5s;
-        overflow: hidden; */ 
-        box-shadow: 1px 1px 20px var(--box-shadow);
+    box-shadow: 1px 1px 20px var(--box-shadow);
          
         }
         .project-image  {
             
             width: 100%;
             height: 200px;
-            background-color: var(--button);
-          
-        }
+           }
         .about-project-para {
             color: var(--h1);
             font-family: var(--link-font);
@@ -282,12 +272,7 @@ h2.options-title {
             padding: 1rem;
             line-height: 1.3;
         }
-        .project-card-hr {
-            margin: 1rem 4rem;
-            height: .1rem;
-            background-color: var(--h1);
-            border: none;
-        }
+        
         .project-card:hover {
             opacity: 1;
             transform: scale(1.01);
@@ -297,9 +282,11 @@ h2.options-title {
         .project-links {
             display: flex;
             justify-content: center;
+            align-items: center;
+    margin-bottom: 1rem;
         }
         .fa-github-square {
-            font-size: 1.4rem;
+            font-size: 1.9rem;
             color: var(--h1);
             margin: 0 .5rem;
         }
@@ -307,9 +294,11 @@ h2.options-title {
             background-color: var(--button);
             border: none;
             border-radius: .2rem;
-            padding: .2rem;
+            padding: .4rem .8rem;
             text-transform: uppercase;
             font-size: .7rem;
+            color: white;
+
         }
             .view-here-btn:hover {
         cursor: pointer;
@@ -340,7 +329,7 @@ h2.options-title {
                 display: flex;
                 justify-content: space-around;
                 flex-direction: row;
-                width: 15%;
+                width: 10%;
                 margin: 2rem 0 1rem 0;
 
             }
