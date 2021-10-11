@@ -6,6 +6,7 @@
 }
 body {
     overflow-x: hidden;
+    
 }
 html {
     scroll-behavior: smooth;
@@ -35,10 +36,9 @@ html {
 header {
     display: flex;
     flex-direction: column;
-  background-color: var(--background-blue);
+  background-color: var(--background-white);
   max-width: 100%;
-  /* height: 100vh; */
-padding-top: 2rem;
+  margin-bottom: 3rem;
 }
 .sticky .row   {
     position: fixed; 
@@ -47,18 +47,21 @@ padding-top: 2rem;
     width: 100%; 
     height: 1rem;
     z-index: 9999; 
-    background-color:var(--navSticky-background);
+    background-color:var(--h1);
     box-shadow: 0 2px 2px #efefef;
     padding: 2rem;
+    align-items: center;
 }
 .row {
     display: flex;
     justify-content: flex-end;
-    height: fit-content;
+    align-items: center;
+    height: 6rem;
     flex-wrap: wrap;
     animation-name: moveInRight;
     animation-duration: 3s;
     margin-bottom: 2rem;
+    background-color: var(--h1);
 }
 .main-nav li  {
     display: inline-block;
@@ -66,8 +69,9 @@ padding-top: 2rem;
     font-family: var(--link-font);
 }
 .nav-links {
-    color:var(--links);
+    color:var(--background-white);
     text-decoration: none;
+    font-size: 1.5rem;
 }
 .nav-links:hover {
     transition: all 1s ease;
@@ -81,6 +85,8 @@ padding-top: 2rem;
     display: grid;
     grid-template-columns: 1fr  1fr;
     justify-items: center;
+    max-width: 90%;
+    margin: auto;
 }
 .hero-text-box {
     margin:8rem 4rem;
@@ -88,7 +94,7 @@ padding-top: 2rem;
     flex-direction: column;
 }
 h1 {
-    font-size: 4rem;
+    font-size: 6rem;
     font-family: var(--link-font);
     padding: .3rem 0;
     text-transform: capitalize;
@@ -118,7 +124,7 @@ h1 {
     }
 }
 h3 {
-    font-size: 1rem;
+    font-size: 2rem;
     font-family: var(--link-font);
     font-weight: 500;
     color: var(--h3);
@@ -143,13 +149,15 @@ h5 {
     margin-right: .5rem;
     margin-bottom: 1.5rem;
     padding:.4rem .8rem;
-    border-radius: .2rem;
+    border-radius: .8rem;
     color: var(--hover);
     text-transform: uppercase;
     background-color: var(--button);
     border: none;
     animation-name: moveUp;
     animation-duration: 3s;
+    padding: 1rem 2rem;
+    font-size: 1rem;
 }
 @keyframes moveUp {
     0% {
@@ -178,7 +186,7 @@ box-shadow: 1px 2px 6px  var(--button) ;
    .fa-linkedin, .fa-github-square {
         color:var(--social-media-link);
         margin-right: .5rem !important;
-        font-size: 1.5rem !important;
+        font-size: 1.9rem !important;
     }
     .fa-linkedin:hover, .fa-github-square:hover {
         color: var(--social-media-link);
@@ -225,6 +233,7 @@ box-shadow: 1px 2px 6px  var(--button) ;
 /* --------------------- ----- */
 .about-me-section {
     background-color: var(--background-grey);
+    margin-bottom: 3rem;
 }
  h2 {
      text-align: center;
@@ -232,13 +241,14 @@ box-shadow: 1px 2px 6px  var(--button) ;
      text-transform: capitalize;
      font-family: var(--link-font);
      font-size: 2rem;
-     padding:2rem .5rem .5rem ;
+     padding:2rem .5rem .5rem;
+     margin-top: 3rem;
   }   
   .about-me-underline {
     background-color:var(--button);
     height: .2rem;
     border: none;
-    margin:0  48rem 0 48rem;
+    margin:0  48rem 2rem 48rem;
   }
     .about-me-container {
         display: grid;
@@ -309,9 +319,9 @@ margin-bottom: 1rem;
     text-transform: uppercase;
     margin: 1rem;
     background-color: var(--tech-stack);
-    padding:0 .5rem;
-    font-size: 1rem;
-    border-radius: 2px;
+    padding:.5rem 1rem;
+    font-size: 2rem;
+    border-radius: .8rem;
     color: var(--button);
     border-left: 0.4rem solid var(--h1);
 }
@@ -327,13 +337,14 @@ margin-bottom: 1rem;
 }
 .getting-to-know {
     font-family: var(--link-font);
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
     animation-name: moveUp;
     animation-duration: 3s;
 }
 /* -----Start of Project section------  */
 .project-section {
     background-color:var(--background-grey);
+    
 }
 .project-container {
     display: flex;
@@ -341,18 +352,19 @@ margin-bottom: 1rem;
     margin-top: 5rem;
     animation-name: moveInLeft;
     animation-duration: 3s;
+    padding:0 5rem;
 }
+
 .project-card {
      background-color: var(--background-white);
     border-radius: 5px;
-     box-shadow: 1px 1px 10px var(--background-grey) ;
+     box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.25);
      width: 16rem;
      transition: transform 0.5s, opacity 0.5s;
      overflow: hidden;
      }
     .project-image  {
         width: 100%;
-        background-color: var(--button);
       }
     .about-project-para {
         color: var(--h1);
@@ -369,6 +381,7 @@ margin-bottom: 1rem;
 .project-links {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 1rem;
 }
 .fa-github-square {
@@ -377,10 +390,11 @@ margin-bottom: 1rem;
     margin: 0 .5rem;
 }
 .view-here-btn {
+    color: white;
     background-color: var(--button);
     border: none;
     border-radius: .2rem;
-    padding: .2rem;
+    padding: .4rem .8rem;
     text-transform: uppercase;
     font-size: .7rem;
 }
