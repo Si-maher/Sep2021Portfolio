@@ -129,7 +129,7 @@ to {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width:1200px;
-  background-color: blue;
+  /* background-color: blue; */
   justify-content: center;
   gap: 2rem;
   transform: translateX(400%);
@@ -252,19 +252,22 @@ span {
   
  .box {
    grid-template-columns: 1fr;
-   max-width: 310px;
+   max-width: 360px;
    margin-bottom: 1.5rem;
  }
  .img-box {
    height: 300px;
  }
  .text-box {
-   padding:0 10rem;
+   padding:0 8rem;
    font-size: 1rem;
+ }
+ .img-box-8 {
+   background-position: top;
  }
  .img-box-9 {
    background-position: top;
-   margin-left: 18rem;
+   margin-left: 12rem;
  }
  .footer-icons {
    width: 25%;
