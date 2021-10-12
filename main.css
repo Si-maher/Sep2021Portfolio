@@ -374,7 +374,31 @@ margin-bottom: 1rem;
      width: 16rem;
      transition: transform 0.5s, opacity 0.5s;
      overflow: hidden;
+     position: relative;
      }
+     .project-card-1::after, .project-card-2::after, 
+     .project-card-3::after, .project-card-4::after {
+     
+         content: 'css' ;
+         position: absolute;
+         background-color:var(--button);
+         color: white;
+         top: 5%;
+         right: -22%;
+         font-size: 2rem;
+         transform: rotate(45deg);
+         padding: .1rem 5rem;
+     
+    }
+    .project-card-2::after {
+        content: 'JS' ;
+        }
+    .project-card-3::after {
+        content: 'React' ;
+        }
+    .project-card-2::after {
+        content: 'JS' ;
+        }
     .project-image  {
         width: 100%;
         height: 200px;
