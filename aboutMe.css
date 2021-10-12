@@ -186,7 +186,7 @@ font-size: 1.5rem;
 line-height: 1.5;
 letter-spacing: .1rem;
 padding: 1rem;
-font-weight: 300;
+font-weight: 400;
 }
 blockquote {
   font-size: 2rem;
@@ -195,13 +195,16 @@ blockquote {
   letter-spacing: .2rem;
   margin-bottom: 2rem;
 }
-span {
-  color: var(--button);
+a, span {
+  color: var(--footer);
   text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 500;
 }
 .date {
   font-size: 3rem;
-  color: var(--year-date);
+  color: var(--button);
+  font-weight: 500;
 }
 
 
@@ -271,6 +274,9 @@ span {
  .img-box-9 {
    background-position: top;
    margin-left: 12rem;
+ }
+ .text-box-9 {
+padding: 0 14rem;
  }
  .footer-icons {
    width: 25%;
