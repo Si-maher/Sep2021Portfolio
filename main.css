@@ -311,7 +311,7 @@ margin-bottom: 1rem;
 }
 .friendly-with {
     align-items: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     animation-name: moveUp;
     animation-duration: 3s;
     font-family: var(--link-font);
@@ -332,9 +332,9 @@ margin-bottom: 1rem;
     background-color: var(--tech-stack);
     padding:.5rem 1rem;
     font-size: 1.5rem;
-    border-radius: .8rem;
+    border-radius: .2rem;
     color: var(--button);
-    border-left: 0.4rem solid var(--h1);
+    border-left: 0.4rem solid var(--button);
     
 }
 .span-tech-block {
@@ -404,8 +404,8 @@ margin-bottom: 1rem;
     margin: 0 .5rem;
 }
 .view-here-btn {
-   color: white; 
-    background-color: var(--button);
+   color:var(--button); 
+    background-color: var(--background-white);
     border: none;
     border-radius: .2rem;
     padding: .4rem .8rem;
