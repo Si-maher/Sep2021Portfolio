@@ -12,15 +12,18 @@
           --hover: rgb(136,235,242);
           --hamburger-line: rgb(5,18,31);
           --background-white:rgb(255,255,255);
+          --year-date:rgb(16,42,66)
         }
         html {
           scroll-behavior: smooth;
       }
     body {
-        overflow-x: hidden;
-        overflow-y: hidden;
+       overflow-x: hidden; 
+       position: relative;
+     
         font-family: 'Roboto', sans-serif;
       }
+   
   nav {
           display: flex;
           justify-content: flex-end;
@@ -45,7 +48,6 @@
           transition: all 1s ease;
           color: var(--background-white);
           border-bottom: 1px solid var(--background-white);
-          color: var(--background-white);
       }
       .hamburger-menu {
           padding: 1rem;
@@ -129,7 +131,7 @@ to {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width:1200px;
-  /* background-color: blue; */
+  background-color: rgba(248, 238, 238, 0.3);
   justify-content: center;
   gap: 2rem;
   transform: translateX(400%);
@@ -179,7 +181,7 @@ to {
 }
 
 .text-box {
-color: white;
+color: var(--button);
 font-size: 1.5rem;
 line-height: 1.5;
 letter-spacing: .1rem;
@@ -199,6 +201,7 @@ span {
 }
 .date {
   font-size: 3rem;
+  color: var(--year-date);
 }
 
 

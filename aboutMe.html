@@ -8,34 +8,36 @@
     <script src="https://kit.fontawesome.com/1cea079a31.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
-<body>
+<div class="overflow">
 
+  <body>
+    
     <header id="header">
       <nav>
             <ul class="nav-links">
               <li> <a href="index.html">home</a></li>
-                <li> <a href="projects.html">projects</a></li>
+              <li> <a href="projects.html">projects</a></li>
                 <li> <a href="index.html/#contact">contact</a></li>
-            </ul>
+              </ul>
             <div class="hamburger-menu">
-                <div class=" line line1"></div>
+              <div class=" line line1"></div>
                 <div class="line line2"></div>
                 <div class="line line3"></div>
 
-            </div>
+              </div>
         </nav>
-    </header>
+      </header>
     <main>
 
-        <div class="timeline-header">
+      <div class="timeline-header">
           <h2 class="timeline-header-title"> <blockquote>
             "The journey of a thousand miles begins with one step"</h2>
           </blockquote>
-            
+          
           <h3 class="timeline-header-subtitle">My Journey....</h3>
         </div>
         <div class="main-container">
-
+          
           <div class="box">
             <div class="img-box img-box-1">
             </div>
@@ -48,49 +50,49 @@
                 A passion that continues to this day...</p>
               </div>
         </div>
- <div class="box">
-            <div class="text-box">
-               <p class="paragraph-text">
-                <span class="date">2003</span> <br>
+        <div class="box">
+          <div class="text-box">
+            <p class="paragraph-text">
+              <span class="date">2003</span> <br>
                 Operational tours and trips including the following; Northern Ireland, Gibralter, Kuwait, America, Belize, Jamaica, Malaysia, Kenya. Also during this period promotion course for Lance Corporal and Corporal, the latter being conducted at <a href="https://www.army.mod.uk/who-we-are/our-schools-and-colleges/infantry-battle-school/" target="blank">
                   <span> The Infantry Battle School</span>.
                 </a>
               </div>
               <div class="img-box img-box-2">
    </div>
-</div>
+  </div>
 <div class="box">
-          <div class="img-box img-box-3">
- </div>
+  <div class="img-box img-box-3">
+  </div>
  <div class="text-box">
-
+   
    <p class="paragraph-text">
      <span class="date">2004</span> <br>
      Kosovo, and it was around this time that I started to contemplate a career transition into the corporate security sector.
     </div>
-            </div>
-          <div class="box">
-            <div class="text-box">
-
-              <p class="paragraph-text">
-                <span class="date">2006</span> <br>
-                Working in Afghanistan, predominately in the Helmand province and surrounding areas. </p>
-              </div>
-              <div class="img-box img-box-4">
-              </div>
-            </div>
+  </div>
+  <div class="box">
+    <div class="text-box">
       
+      <p class="paragraph-text">
+        <span class="date">2006</span> <br>
+        Working in Afghanistan, predominately in the Helmand province and surrounding areas. </p>
+      </div>
+      <div class="img-box img-box-4">
+      </div>
+    </div>
+    
             <div class="box">
               <div class="img-box img-box-5">
               </div>
               <div class="text-box">
-
+                
                 <p class="paragraph-text">
                   <span class="date">2008</span> <br>
                   Working in Iraq and operating in and around the vicinty of Baghdad. Countrywide trips would also be undertaken to Mosul, Kirkuk and surrounding areas, Al-Falluja, Ramadi and down south To Basra and the Kuwait border. Hard work but (mostly) great people and good memories.</p>
                 </div>
-                </div>
-        <div class="box">
+              </div>
+              <div class="box">
           <div class="text-box">
 
             <p class="paragraph-text">
@@ -103,13 +105,13 @@
           <div class="box">
             <div class="img-box img-box-7"></div>
             <div class="text-box">
-
+              
               <p class="paragraph-text">
                 <span class="date">2011</span> <br>
                 One of my favourite trips was Machu Picchu, a truly majestical place where the Andes spiralled and pierced through the low lying clouds. I was also living in Finland by this time and getting to know the Nordic country. In 2013 I decided to go back to school, this time in Helsinki.</p>
               </div>
             </div>
-          <div class="box">
+            <div class="box">
             <div class="text-box">
 
               <p class="paragraph-text">
@@ -139,38 +141,39 @@
         <div class="footer-icons">
           
           <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="blank""> <i id="footer-icon" class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/Si-maher" target="blank"> <i id="footer-icon" class="fab fa-github-square" ></i></a> 
+          <a href="https://github.com/Si-maher" target="blank"> <i id="footer-icon" class="fab fa-github-square" ></i></a> 
             <a href="#header"><i id="footer-icon" class="fas fa-arrow-up"></i></a>
           </div>
           <hr class="footer-hr">
           <div class="footer-txt">
             <p>&copy; <span class="span-name">simon maher</span> 2021
               <br>
-                Vantaa, Finland
-              </p>
+              Vantaa, Finland
+            </p>
+            
+          </div>
+        </footer>
+        <script src="projects.js"></script>  
+        <script>
+          const boxes = document.querySelectorAll('.box')
+          window.addEventListener('scroll', checkBoxes)
           
-            </div>
-          </footer>
-          <script src="projects.js"></script>  
-          <script>
-            const boxes = document.querySelectorAll('.box')
-            window.addEventListener('scroll', checkBoxes)
-
-            checkBoxes()
-
-            function checkBoxes() {
-              const triggerBottom = window.innerHeight / 5 *4
-              boxes.forEach(box => {
-                const boxTop = box.getBoundingClientRect().top
-                if(boxTop < triggerBottom) {
-                  box.classList.add('show')
-                } else {
-                  box.classList.remove('show')
-                }
-              })
-            }
+          checkBoxes()
+          
+          function checkBoxes() {
+            const triggerBottom = window.innerHeight / 5 *4
+            boxes.forEach(box => {
+              const boxTop = box.getBoundingClientRect().top
+              if(boxTop < triggerBottom) {
+                box.classList.add('show')
+              } else {
+                box.classList.remove('show')
+              }
+            })
+          }
           </script>  
         </body>
+      </div>
       </html>
             
             

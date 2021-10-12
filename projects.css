@@ -44,7 +44,7 @@ nav {
     justify-content: flex-end;
     align-items: center;
     min-height: 8vh;
-    /* background-color: cadetblue; */
+    background-color: var(--footer);
 }
 .nav-links {
     display: flex;
@@ -55,14 +55,14 @@ nav {
 .nav-links a {
     font-size:2rem;
     text-decoration: none;
-    color: var(--links);
+    color: var(--background-white);
     text-transform: capitalize;
 
 }
 .nav-links a:hover {
     transition: all 1s ease;
-    color: var(--hover);
-    border-bottom: 1px solid var(--hover);
+    color: var(--background-white);
+    border-bottom: 1px solid var(--background-white);
 }
 .hamburger-menu {
     padding: 1rem;
