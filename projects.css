@@ -44,16 +44,17 @@ nav {
     justify-content: flex-end;
     align-items: center;
     min-height: 8vh;
-    background-color: var(--footer);
+    background-color: var(--h1);
 }
 .nav-links {
     display: flex;
     justify-content: space-around;
     width: 30%;
     list-style: none;
+    font-family: var(--link-font);
 }
 .nav-links a {
-    font-size:2rem;
+    font-size:1.5rem;
     text-decoration: none;
     color: var(--background-white);
     text-transform: capitalize;
@@ -61,8 +62,8 @@ nav {
 }
 .nav-links a:hover {
     transition: all 1s ease;
-    color: var(--background-white);
-    border-bottom: 1px solid var(--background-white);
+    color: var(--hover);
+    border-bottom: 1px solid var(--hover);
 }
 .hamburger-menu {
     padding: 1rem;
@@ -87,11 +88,11 @@ nav {
         right: 0rem;
         height: 92vh;
         top: 8vh;
-        background-color: cadetblue;
+        background-color: var(--footer);
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 50%;
+        width: 100%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
         overflow-x: hidden;
