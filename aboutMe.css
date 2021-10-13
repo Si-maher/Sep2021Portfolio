@@ -230,7 +230,7 @@ a, span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--link-font);
+  background-color: var(--footer);
 }
 .footer-icons {
   display: flex;
