@@ -168,6 +168,11 @@ height: 20%;
     .nav-links {
  font-size: .8rem;
     }
+    .nav-link-contact {
+        border: none;
+        padding: 0;
+        color: var(--button);
+    }
  .hero-text-box {
         margin:.5rem .5rem;
         padding: 1rem;
@@ -185,6 +190,7 @@ height: 20%;
     h2 {
         margin-top: ;
     }
+  
     .hero-img-box {
         margin: auto 0;
         padding: 0 .5rem;
@@ -208,6 +214,20 @@ height: 20%;
     .title-top-border {
         margin-right:19rem;
         margin-left: .5rem;
+    }
+    .span-tech-block {
+        grid-template-columns: repeat(2,1fr);
+        gap: .5rem;
+    }
+    .list-item {
+        margin-bottom:.5rem ;
+        width: 80%;
+    }
+    .span-tech {
+        padding: .1rem .2rem;
+    }
+    .check {
+        margin-right: .3rem;
     }
     section.project-options {
         height: 50vh;

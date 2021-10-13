@@ -65,7 +65,7 @@
       .line {
         width: 25px;
         height: 3px;
-        background-color: var(--background-white);
+        background-color: var(--button);
         margin: 5px;
         transition:all .3s ease-in;
     }
@@ -74,7 +74,7 @@
             position: absolute;
             right: 0;
             height: 100vh;
-            top: 5vh;
+            top: 6vh;
             background-color:var(--footer);
             display: flex;
             flex-direction: column;
@@ -84,6 +84,7 @@
             transition: transform 0.5s ease-in;
             z-index: 9999;
             opacity:.9;
+            color: var(--button);
             
           }
           .nav-links li {
@@ -265,7 +266,7 @@ a, span {
 }
 @media (max-width:30em) {
 
-  
+
  .box {
    grid-template-columns: 1fr;
    max-width: 360px;

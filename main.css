@@ -368,6 +368,7 @@ padding: 1rem;
     margin-bottom: 4rem;
     animation-name: moveUp;
     animation-duration: 3s;
+    padding: 1rem;
 }
 /* -----Start of Project section------  */
 .project-section {
