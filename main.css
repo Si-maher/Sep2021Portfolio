@@ -24,6 +24,7 @@ html {
     --h2: rgb(16,42,66);
     --social-media-link: rgb(16,42,66);
     --h3: rgb(97,125,165);
+    --col-empty: rgb(243, 207, 150);
     --button: rgb(207,152,64);
     --hover: rgb(207,152,64);
     --button-hover: rgb(216,159,64);
@@ -322,12 +323,13 @@ margin-bottom: 1rem;
     grid-template-columns: repeat(3,1fr);
     gap: 3rem;
 }
-.tech-list-col-1,
-.tech-list-col-2,
-.tech-list-col-3
+.tech-list-col
  {
 box-shadow: .5px .5px 9px var(--box-shadow);
 padding: 1rem;
+}
+.col-empty {
+    background-color: var(--col-empty);
 }
 .friendly-with {
     margin-bottom: 2rem;
