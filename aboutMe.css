@@ -207,6 +207,7 @@ blockquote {
 }
 .timeline-header-subtitle {
   font-size: 1.5rem;
+  font-style: italic;
 }
 a, span {
   color: var(--button);
@@ -267,8 +268,9 @@ a, span {
   text-decoration: none;
 }
 @media (max-width:30em) {
-
-
+blockquote {
+  letter-spacing: .1rem;
+}
  .box {
    grid-template-columns: 1fr;
    max-width: 360px;
