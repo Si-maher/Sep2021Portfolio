@@ -20,12 +20,14 @@
           scroll-behavior: smooth;
       }
     body {
-       overflow-x: hidden; 
-       position: relative;
-     
-        font-family: var(--link-font);
-      }
-   
+      
+      font-family: var(--link-font);
+    }
+    .overflow {
+     overflow-x: hidden; 
+     position: relative;
+
+   }
   nav {
           display: flex;
           justify-content: flex-end;
