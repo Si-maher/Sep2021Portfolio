@@ -3,16 +3,18 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            overflow-x: hidden;
         }
         :root {
           --footer: rgb(5, 18, 31); 
-          --button: rgb(44,174,186);
           --links: rgb(16,42,66);
-          --hover: rgb(136,235,242);
+          --main-text: rgb(97,125,165);
           --hamburger-line: rgb(5,18,31);
           --background-white:rgb(255,255,255);
-          --year-date:rgb(16,42,66)
+          --year-date:rgb(16,42,66);
+          --link-font: "Roboto", sans-serif;
+          --button: rgb(207,152,64);
+          --hover: rgb(207,152,64);
+          --button-hover: rgb(216,159,64);
         }
         html {
           scroll-behavior: smooth;
@@ -21,7 +23,7 @@
        overflow-x: hidden; 
        position: relative;
      
-        font-family: 'Roboto', sans-serif;
+        font-family: var(--link-font);
       }
    
   nav {
@@ -29,7 +31,6 @@
           justify-content: flex-end;
           align-items: center;
           min-height: 8vh;
-          background-color: var(--footer);
       }
       .nav-links {
           display: flex;
@@ -38,17 +39,24 @@
           list-style: none;
       }
       .nav-links a {
-          font-size:1rem;
+          font-size:1.5rem;
           text-decoration: none;
-          color: var(--background-white);
+          color: var(--h1);
           text-transform: capitalize;
+          font-family: var(--link-font);
       
       }
       .nav-links a:hover {
           transition: all 1s ease;
-          color: var(--background-white);
-          border-bottom: 1px solid var(--background-white);
+          color: var(--button);
+          border-bottom: 1px solid var(--button);
       }
+      .nav-link-contact {
+        color:var(--h1);
+        padding: .4rem .8rem;
+        border-radius:.8rem ;
+        border: 2px solid var(--button);
+    }
       .hamburger-menu {
           padding: 1rem;
           display: none;
@@ -181,7 +189,7 @@ to {
 }
 
 .text-box {
-color: var(--button);
+color: var(--main-text);
 font-size: 1.5rem;
 line-height: 1.5;
 letter-spacing: .1rem;
@@ -189,14 +197,16 @@ padding: 1rem;
 font-weight: 400;
 }
 blockquote {
-  font-size: 2rem;
-  text-transform: capitalize;
-  font-weight: lighter;
+  font-size: 2.5rem;
+  font-weight: 600;
   letter-spacing: .2rem;
   margin-bottom: 2rem;
 }
+.timeline-header-subtitle {
+  font-size: 1.5rem;
+}
 a, span {
-  color: var(--footer);
+  color: var(--button);
   text-transform: capitalize;
   text-decoration: none;
   font-weight: 500;

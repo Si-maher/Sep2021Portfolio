@@ -15,7 +15,7 @@ html {
 :root {
     --background-blue: rgb(224,252,255);
     --background-grey: rgb(241,245,248);
-    --background-white:rgb(255,255,255);
+    --background-white:rgb(255, 255, 255);
     --navSticky-background: rgb(250,250,250,0.98);
     --navSticky-shadow:(#efefef);
     --links: rgb(16,42,66);
@@ -24,9 +24,9 @@ html {
     --h2: rgb(16,42,66);
     --social-media-link: rgb(16,42,66);
     --h3: rgb(97,125,165);
-    --hover: rgb(136,235,242);
-    --button: rgb(44,174,186);
-    --button-hover: rgb(136,235,242);
+    --button: rgb(207,152,64);
+    --hover: rgb(207,152,64);
+    --button-hover: rgb(216,159,64);
     --tech-stack: rgb(218,226,236);
     --link-font: "Roboto", sans-serif;
     --footer: rgb(5, 18, 31);
@@ -47,12 +47,12 @@ header {
     top: 0;
     bottom:0;
     width: 100%; 
-    height: 1.5rem;
+    height: 4.4rem;
     z-index: 9999; 
-    background-color:var(--h1);
     box-shadow: 0 2px 2px #efefef;
     padding: 2rem;
     align-items: center;
+    opacity: 1;
 }
 .row {
     display: flex;
@@ -60,20 +60,26 @@ header {
     align-items: center;
     height: 6rem;
     flex-wrap: wrap;
-    animation-name: moveInRight;
-    animation-duration: 3s;
     margin-bottom: 2rem;
-    background-color: var(--h1);
+    background-color: var(--background-white);
 }
 .main-nav li  {
+    animation-duration: 3s;
+    animation-name: moveInRight;
     display: inline-block;
     padding: 0 2rem;
     font-family: var(--link-font);
 }
 .nav-links {
-    color:var(--background-white);
+    color:var(--h1);
     text-decoration: none;
     font-size: 1.5rem;
+}
+.nav-link-contact {
+    color:var(--h1);
+    padding: .4rem .8rem;
+    border-radius:.8rem ;
+    border: 2px solid var(--button);
 }
 .nav-links:hover {
     transition: all 1s ease;
@@ -131,7 +137,6 @@ h3 {
     font-weight: 500;
     color: var(--h3);
     padding-bottom: .3rem;
-    text-transform: capitalize;
     animation-name: moveInLeft;
     animation-duration: 3s;
     animation-delay: .1s;
@@ -152,7 +157,7 @@ h5 {
     margin-bottom: 1.5rem;
     padding:.4rem .8rem;
     border-radius: .8rem;
-    color: var(--hover);
+    color: var(--background-white);
     text-transform: uppercase;
     background-color: var(--button);
     border: none;
@@ -160,6 +165,11 @@ h5 {
     animation-duration: 3s;
     padding: 1rem 2rem;
     font-size: 1rem;
+}
+.btn-full {
+    background-color: var(--button);
+    border: 2px solid var(--button);
+    color: var(--background-white);
 }
 @keyframes moveUp {
     0% {
@@ -175,9 +185,8 @@ h5 {
 cursor: pointer;
 text-decoration: none;
 background-color: var(--button-hover);
-color: var(--h1);
 transition: all 1s ease;
-box-shadow: 1px 2px 6px  var(--button) ;
+color: var(--h1);
 }
 .social-icon-row {
        list-style: none;
@@ -185,15 +194,14 @@ box-shadow: 1px 2px 6px  var(--button) ;
        animation-delay: .1s;
        animation-duration: 3s;
     }
-   .fa-linkedin, .fa-github-square {
-        color:var(--social-media-link);
+   .fa-linkedin, .fa-github {
+        color:var(--h1);
         margin-right: .5rem !important;
         font-size: 1.9rem !important;
     }
-    .fa-linkedin:hover, .fa-github-square:hover {
-        color: var(--social-media-link);
+    .fa-linkedin:hover, .fa-github:hover {
+        color: var(--hover);
         transition: all 1s ease;
-        box-shadow: 1px 2px 6px  var(--button) ;
         text-decoration: none;
     }
     .linkedin {
@@ -275,7 +283,7 @@ box-shadow: 1px 2px 6px  var(--button) ;
         box-shadow: 0 1.2rem 3.2rem rgba(0,0,0, 0.05) ;
         }
     .about-me-icon {
-        color:var(--h1);
+        color:var(--button);
         padding-top: 1rem;
         padding-bottom: 1rem;
         text-align: center;
@@ -309,43 +317,51 @@ margin-bottom: 1rem;
     flex-direction: column;
     align-items: center;
 }
+.span-tech-block {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+.tech-list-col-1,
+.tech-list-col-2,
+.tech-list-col-3
+ {
+box-shadow: .5px .5px 9px var(--box-shadow);
+padding: 1rem;
+}
 .friendly-with {
-    align-items: center;
     margin-bottom: 2rem;
     animation-name: moveUp;
     animation-duration: 3s;
     font-family: var(--link-font);
-    font-weight: 400;
-}
-.tech-list {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    justify-content: flex-start;
 }
 .list-item {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    
 }
 .span-tech {
     text-transform: capitalize;
-    margin: 1rem;
-    background-color: var(--tech-stack);
-    padding:.5rem 1rem;
+    /* margin: 1rem; */
+    padding:.2rem .4rem;
     font-size: 1.5rem;
     border-radius: .2rem;
-    color: var(--button);
-    border-left: 0.4rem solid var(--button);
-    
+    color: var(--h1);  
 }
-.span-tech-block {
-    display: flex;
+.check {
+    color: var(--button);
+    margin-right: 1rem;
 }
 .span-title {
     font-size: 1.3rem;
     text-align: center;
     margin: 2rem 0;
     color: var(--h1);
-    font-weight: 500;
+    font-weight: 800;
 }
 .getting-to-know {
     font-family: var(--link-font);
