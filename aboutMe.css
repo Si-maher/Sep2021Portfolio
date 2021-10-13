@@ -221,7 +221,8 @@ a, span {
   font-weight: 500;
 }
 .span-letter {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  color: var(--footer);
 }
 
  /* footer section  */
@@ -229,7 +230,7 @@ a, span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--footer);
+  background-color: var(--link-font);
 }
 .footer-icons {
   display: flex;
